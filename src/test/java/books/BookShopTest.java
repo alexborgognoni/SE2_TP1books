@@ -30,7 +30,7 @@ public class BookShopTest {
 	            test_basket[i] = rand.nextInt(6);
 	        }
 	        
-	        System.out.println("Test #"+ (test+1) + "\t" + "Test basket: "+Arrays.toString(test_basket) + "\t" + "price: " + test_shop.cost(test_basket));
+	        System.out.printf("Test #%d\tTest basket: %s\tPrice:%f\n",test,Arrays.toString(test_basket),test_shop.cost(test_basket));
 	        
         }
 	    assertTrue(true);

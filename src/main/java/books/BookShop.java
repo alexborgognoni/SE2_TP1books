@@ -24,7 +24,7 @@ public class BookShop {
     	
     	// calculate price w/o discount
     	
-    	for (int i = 0; i< books.length; i++) {
+    	for (int i = 0; i < books.length; i++) {
     		total += books[i] * 8;
     	}
     	
@@ -42,19 +42,19 @@ public class BookShop {
     			
     	switch(diff) {
     	  case 2:
-    	    total -= (diff*8)*0.07;
+    	    total -= (2*8)*0.07;
     	    break;
     	  case 3:
-    		total -= (diff*8)*0.14;
+    		total -= (3*8)*0.14;
     	    break;   	  
     	  case 4:
-      		total -= (diff*8)*0.28;
+      		total -= (4*8)*0.28;
       	    break;
     	  case 5:
-      		total -= (diff*8)*0.35;
+      		total -= (5*8)*0.35;
       	    break;
     	  default:
-    		  total = total;
+    		  break;
     	}
         return total;
     }
